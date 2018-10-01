@@ -1,9 +1,14 @@
 class Estadistica:
 
     def calcular(self, cadena):
+        arreglo = cadena.split(",")
         if len(cadena) == 0:
             return [0, 0, 0, 0]
-        elif len(cadena) == 1:
-            return [1, 1, 1, 1]
         else:
-            return [2, 1, 2, 1.5]
+            minimo = int(min(arreglo))
+            maximo = int(max(arreglo))
+            suma = 0
+            for elemento in arreglo:
+                suma += float(elemento)
+            promedio = suma / len(arreglo)
+            return [len(arreglo), minimo, maximo, promedio]
