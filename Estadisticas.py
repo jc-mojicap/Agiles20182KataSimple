@@ -1,4 +1,7 @@
 class Estadistica:
 
     def calcular(self, cadena):
-        return 0
+        if len(cadena) == 0:
+            return 0
+        else:
+            return 1
