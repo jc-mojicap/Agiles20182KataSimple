@@ -1,10 +1,4 @@
 class Estadistica:
 
-    def calcular(self, cadena):
-        arreglo = cadena.split(",")
-        if len(cadena) == 0:
-            return [0, 0, 0]
-        else:
-            minimo = int(min(arreglo))
-            maximo = int(max(arreglo))
-            return [len(arreglo), minimo, maximo]
+    def calcular(cadena):
+        return [0, 0, 0, 0]
