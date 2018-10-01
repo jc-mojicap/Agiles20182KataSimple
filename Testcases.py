@@ -13,3 +13,9 @@ class Test(TestCase):
 
     def test_stringDosElementos(self):
         self.assertEqual(Estadistica().calcular("1,2"), [2, 1, 2], "String con dos elemento")
+
+    def test_stringVariosElementos1(self):
+        self.assertEqual(Estadistica().calcular("1,2,3"), [3, 1, 3], "String con tres elemento")
+
+    def test_stringVariosElementos2(self):
+        self.assertEqual(Estadistica().calcular("1,2,3,4"), [4, 1, 4], "String con cuatro elemento")
